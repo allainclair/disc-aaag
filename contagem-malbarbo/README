@@ -1,0 +1,94 @@
+# Introdução
+
+Este exemplo foi desenvolvido pelos professores Marco A L Barbosa
+<malbarbo@gmail.com> e Mauro Henrique Mulati <mhmulati@gmail.com> do
+departamento de informática da Universidade Estadual de Maringá e tem como
+objetivo ressaltar a importância do projeto e análise de algoritmos.
+
+Dado um problema, vamos tentar resolvê-lo usando diversos algoritmos
+(implementados em duas linguagens de programação), e fazer uma avaliação
+experimental.
+
+Vamos responder duas perguntas:
+1. Qual é o algoritmo mais eficiente em relação ao tempo?
+2. O que causa maior diferença na eficiência de uma solução: a linguagem de
+   programação escolhida, ou o algoritmo?
+3. Qual é o tamanho máximo do problema que pode ser resolvido em um minuto?
+
+
+# Problema
+
+Dado uma coleção de palavras, quais são as palavras com maior frequência?
+
+Exemplos
+Entrada: qual é o doce mais doce
+Saída: doce
+
+Entrada: você sabe que sabe sobre você
+Saída: você sabe
+
+
+# Soluções
+
+A seguir descrevemos as ideias usadas para resolver os problemas, para
+entender corretamente a solução, veja o código nos arquivos contagem.py
+e/ou contagem.cpp.
+
+Um previsão da taxa de crescimento do tempo de execução de cada algoritmo
+foi desenvolvida em sala de aula.
+
+## Algoritmo A
+
+A ideia mais direta é selecionar a primeira palavra e calcular a sua frequência,
+selecionar a segunda palavra e calcular a sua frequência, e assim para todas
+as palavras. Conforme as frequência são calculadas, as palavras com maior
+frequência são encontradas.
+
+## Algoritmo B
+
+Algoritmo A com uma pequena mudança na implementação.
+
+## Algoritmo C
+
+Ordenar as palavras da entrada e descobrir qual o tamanho da maior sequência
+de palavras iguais.
+
+## Algoritmo D
+
+Usar um tabela hash, usando como chave a palavra e como valor associado a chave
+a frequência da palavra.
+
+
+# O experimento
+
+Cada algoritmo foi utilizada para resolver o problema para entradas
+de diversos tamanhos. Para cada tamanho de entrada, os algoritmos foram
+executados diversas vezes e uma média do tempo de cada algoritmo foi tomada.
+
+Executamos os algoritmos (em sala de aula) e apresentamos os gráficos com o
+tempo de execução (em relação ao tamanho da entrada) de cada algoritmo.
+
+Verificamos visualmente qual era o mais eficiente.
+
+Existem diversas configurações para o experimento, por exemplo, para executar
+os algoritmos a e b implementados em C++, execute o comando `make
+comparar-alg-a-b-cpp`. Veja o arquivo `Makefile` para outras configurações.
+
+## Requisitos
+
+Para executar os experimentos é necessário ter um sistema Linux com o g++ (com
+suporte ao C++0X), make, python e a biblioteca python-matplotlib. Se você usa
+um sistema baseado no Debian (ex: Ubuntu), você pode instalar estes programas
+com o comando `aptitude install make g++ python python-matplotlib`.
+
+
+# Conclusões
+
+- A solução direta não foi a mais eficiente. O algoritmo mais eficiente foi o
+  algoritmo D.
+- A mudança do algoritmo produziu melhor resultado do que a mudança na
+  linguagem de implementação.
+- Com o algoritmo A em um computador modesto, é possível resolver problemas com
+  +/- 20.000 palavras em 1 min.
+- Com o algoritmo D em um computador modesto, é possível resolver problemas com
+  +/- 1.000.000 de palavras em apenas 1 seg.

@@ -1,0 +1,24 @@
+extra:
+  search:
+    language: 'en, pt'
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+
+nav:
+- Introdução: index.md
+- Aula 1: aula1.md
+
+plugins:
+  - search
+
+site_name: Análise de algoritmos e algoritmos em grafos
+site_description: Disciplina de análise de algoritmos e algoritmos em grafos
+site_author: Allainclair Flausino dos Santos
+site_url: https://allainclair.github.io/disc-aaag
+
+theme:
+  language: pt
+  name: material

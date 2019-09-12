@@ -1,0 +1,8 @@
+venv/
+
+# Python
+
+*.pyc
+
+count/__pycache__
+count/.pytest_cache
