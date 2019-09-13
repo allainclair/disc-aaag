@@ -28,7 +28,7 @@
 
 2. Usando dois fors e contando do indice do for mais externo para frente;
 
-3. Usando str.count() do python com um for;
+3. Usando list_.count(string) do python com um for;
 
 4. Ordenando a lista e contando a maior sub-sequência;
 
