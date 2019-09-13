@@ -43,3 +43,26 @@ def test_random_words():
         start_time = time.perf_counter()
         word, count = func(words)
         print(f'{name} time: {time.perf_counter() - start_time}')
+
+
+def test_random_words_set():
+    word_base_size = 1_000
+    for i in range(1, 51):
+        print('word_base_size:', word_base_size*i)
+        words = word_generator(word_base_size*i, min_silabas=1, max_silabas=3)
+        for j in range(10):
+            print('Instance:', j)
+            # name_function_map = {
+            #     'count1': count1, 'count2': count2, 'count3': count3, 'count4': count4,
+            #     'count5': count5}
+
+            name_function_map = {
+                'count1': count1, 'count2': count2, 'count3': count3}
+
+            # name_function_map = {'count4': count4, 'count5': count5}
+
+
+            for name, func in name_function_map.items():
+                start_time = time.perf_counter()
+                word, count = func(words)
+                print(f'{name} time: {time.perf_counter() - start_time}')

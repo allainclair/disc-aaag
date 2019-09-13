@@ -1,5 +1,9 @@
 ## Análise de algoritmos e algoritmos em grafos
 
+## Avisos
+
+17 de setembro sem aula (viagem).
+
 ## Professor
 
 * Site da disciplina: [http://allainclair.github.io/disc-aaag](

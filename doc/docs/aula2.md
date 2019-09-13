@@ -3,7 +3,7 @@
 ```
 func count1(words)
     max_count = 0
-    for i = 0 to words.length
+    for i = 0 to words.length - 1
         word = words[i]
         word_count = 0
         for j = 0 to words.length
@@ -20,7 +20,7 @@ func count1(words)
 ```
 func count2(words)
     max_count = 0
-    for i = 0 to words.length
+    for i = 0 to words.length - 1
         word = words[i]
         word_count = 1
         for j = i + 1 to words.length
@@ -37,7 +37,7 @@ func count2(words)
 ```
 func count3(words)
     max_count = 0
-    for i = 0 to words.length
+    for i = 0 to words.length - 1
         word = words[i]
         word_count = words.count(word)
         if word_count > max_count
@@ -53,7 +53,7 @@ func count4(words)
     max_sequence = 0
     sequence_size = 1
     words.sort()
-    for i = 0 to words.length - 1
+    for i = 0 to words.length - 2
         word = words[i]
         if word == words[i+1]
             sequence_size += 1
@@ -70,7 +70,7 @@ func count4(words)
 ```
 func count5(words)
     word_count_map = {}
-    for i = 0 to words.length
+    for i = 0 to words.length - 1
         word = words[i]
         if word in dict
             dict[word] += 1
