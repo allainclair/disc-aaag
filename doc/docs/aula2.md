@@ -6,7 +6,7 @@ func count1(words)
     for i = 0 to words.length - 1
         word = words[i]
         word_count = 0
-        for j = 0 to words.length
+        for j = 0 to words.length - 1
             if words[j] == word
                 word_count += 1
             if word_count > max_count
@@ -23,7 +23,7 @@ func count2(words)
     for i = 0 to words.length - 1
         word = words[i]
         word_count = 1
-        for j = i + 1 to words.length
+        for j = i + 1 to words.length - 1
             if words[j] == word
                 word_count += 1
             if word_count > max_count
