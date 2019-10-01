@@ -2,6 +2,8 @@
 
 ## Avisos
 
+03 e 04 de Outubro sem aula (viagem).
+
 17 de setembro sem aula (viagem).
 
 ## Professor
